@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+
+:root{
+    --corPrincipal: #004AAD;
+    --corPrincipalMaisClara: #0e54af;
+    --corSecundaria: #FFFFFF;
+    --corBody: #004bad04;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    background-color: #004bad04;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dashboard{
+    display: flex;
+}
+
+.sidebar-top{
+   width: 250px;
+   background-color: var(--corSecundaria);
+   height: 140px;
+   box-shadow: 0 0 3px black;
+}
+
+.sidebar-top > .logoDashboard{
+    width: 250px;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.sidebar-top > a{  
+    color: black;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-left: 35px;
+    padding-top: 10px;
+}
+
+.sidebar-bottom{
+    width: 250px;
+    background-color: var(--corPrincipal);
+    height: 100vh;
+    box-shadow: 0 0 3px black;
+    border-top-right-radius: 3px;
+}
+
+.sidebar-bottom > a{
+    position: relative;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px;
+    left: 30px;
+    top: 10px;
+}
+
+.sidebar-bottom > a:hover{
+    text-decoration: none;
+    background-color: #ffffff1a;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.click{
+    text-decoration: none;
+    background-color: #ffffff1a;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.mainContent{
+    flex: 1;
+    width: 98vw;
+}
+
+.logo{
+    margin-top: 15vh;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.conteudo{
+    margin: 0 auto;
+    width: 600px;
+}
+
+h1{
+    padding-bottom: 50px;
+    font-family: "Inter",sans-serif;
+    font-weight: 500;
+    font-size: 3em;
+    line-height: 2.25rem;
+    text-align: center;
+    color: #3c3733;
+}
+
+label {
+    width: 100%;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+
+input{
+    width: 96%;
+    font-size: 1.5em;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(170, 170, 170, 0.726);
+}
+
+a.recuperarSenha{
+    display: flex;
+    justify-content: right;
+    color: var(--corPrincipalMaisClara);
+    text-decoration: none;
+}
+
+a.voltarLogin{
+    display: flex;
+    justify-content: center;
+    color: var(--corPrincipalMaisClara);
+    text-decoration: none;
+}
+
+button.botaoEntrar{
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 40px;
+    height: 55px;
+    font-size: 1.5em;
+    font-weight: 600px;
+    color: var(--corSecundaria);
+    background-color: var(--corPrincipal);
+    border-radius: 10px;
+    width: 100%;
+}
+
+button.botaoEntrar:hover{
+    background-image: linear-gradient(to bottom, var(--corPrincipal), #f1e9e928)
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+p{
+    display: inline;
+    font-size: 1.2em;
+}
+
+button.criarConta{
+    cursor: pointer;
+    height: 60px;
+    font-size: 1.2em;
+    font-weight: 200;
+    width: 23%;
+    color: rgb(58, 57, 57);
+    background-color: transparent;
+    border: 1px rgba(0, 0, 0, 0.158) solid;
+    border-radius: 10px;
+}
+
+button.criarConta:hover{
+    border: 1px var(--corPrincipal) solid;
+    color: var(--corPrincipal);
+}
+
+@media (max-width: 960px){
+
+}
+
+@media (max-width: 720px){
+    div.logo img{
+        max-width: 500px;
+        max-height:150px;
+        width: auto;
+        height: auto;
+    }
+
+    div.conteudo{
+        margin: 0 auto;
+        width: 500px;
+    }
+}
+
+@media (max-width: 580px){
+
+    h1{
+        font-size: 2em;
+    }
+
+    div.logo img{
+        margin-top: 30px;
+        max-width: 320px;
+        max-height:150px;
+        width: auto;
+        height: auto;
+    }
+
+    div.conteudo{
+        margin: 0 auto;
+        width: 350px;
+    }
+
+    p{
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    button.criarConta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        margin: 0 auto;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 390px){
+
+    h1{
+        font-size: 1.7em;
+    }
+
+    div.logo img{
+        max-width: 280px;
+    }
+
+    div.conteudo{
+        width: 280px;
+    }
+}
+

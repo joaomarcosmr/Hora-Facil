@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLogin.css">
+    <title>Login - Hora Fácil</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="../imagens/logoHoraFacil.png"/>
+    </div>
+
+    <div class="conteudo">
+        <h1>Entrar na plataforma</h1>
+        <form class="formulario" action="" method="get">
+            <label for="usuario" class="labelLogin">E-mail</label>
+            <input type="email" name="loginEmail" class="loginEmail valida">
+            <br>
+            <label for="senha" class="labelSenha">Senha</label>
+            <input type="password" name="loginSenha" class="loginSenha valida"> <br>
+            <a class="recuperarSenha" href="/telaDeEsqueciSenha.html">Recuperar Senha</a>
+            <button class="botaoEntrar">Entrar</button>
+        </form>
+        <p>Ainda não tem conta?</p>
+        <button class="criarConta"> Crie Agora</button>
+    </div>
+
+    <script src="/scriptLogin.js">
+
+    </script>
+</body>
+</html>
